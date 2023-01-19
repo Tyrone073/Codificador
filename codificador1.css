@@ -63,6 +63,7 @@ body{
     grid-column: 3/3;
     display: grid;
     align-items: center;
+    text-align: center;
 }
 
 footer{
