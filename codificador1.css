@@ -61,6 +61,8 @@ body{
     height: 944px;
     border-radius: 30px ;
     grid-column: 3/3;
+    display: grid;
+    align-items: center;
 }
 
 footer{
