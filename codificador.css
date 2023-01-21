@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(229, 229, 229);
+    display: grid;
+}
+
+.logo {
+    /* padding: 40px 0 0 65px; */
+    position: absolute;
+    top: 40px;
+    left: 65px;
+}
+
+.cuerpo {
+    display: flex;
+    gap: 80px;
+    padding: 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E5E5;
+}
+
+
+.cuadro1 {
+    float: right;
+    display: grid;
+    grid-template-rows: 88% 12%;
+}
+
+.cuadro-texto1 {
+    grid-row: 1/1;
+    width: 680px;
+    margin: 168px 0 0 200px;
+}
+
+.texto1 {
+    width: 577px;
+}
+
+.cuadro-texto-botones1 {
+    margin: 0 0 0 200px;
+    /* background-color: chartreuse; */
+    /* top: 851px; */
+    width: 680px;
+    grid-row: 2/2;
+}
+
+.texto1-1 {
+    background: url(imagen/Vector.png) no-repeat;
+}
+
+.texto1-1 p {
+    text-align: left;
+    color: grey;
+    font-size: 12px;
+    margin: 0px 0px 0px 24px;
+    padding: 2px 0px 17px;
+}
+
+.botones {
+    /* background-color: rgb(255, 152, 18); */
+    display: flex;
+    gap: 24px;
+}
+
+.botones button{
+    width: 328px;
+    padding: 24px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.boton0{
+    background-color: #0A3871;
+    color: #ffff;
+    /*float: left;*/
+}
+
+.boton1{
+    background-color: #D8DFE8;
+    color: #0A3871;
+ /* float: right;*/
+}
+
+.cuadro2 {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    float: right;
+    margin: 40px 10px 0 0;
+    height: 944px;
+    border-radius: 30px;
+}
+
+.contenido-cuadro2 {
+    text-align: center;
+    margin: auto;
+}
+
+.imagen1 {
+    width: 100%;
+    padding: 215px 0px 30px;
+}
+
+.texto2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px 10px;
+}
+
+.texto2-1 {
+    margin: 20px 10px;
+}
+
+footer {
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+@media screen and (max-width: 540px){
+    body {
+        padding: 0 ;
+    }
+
+}
