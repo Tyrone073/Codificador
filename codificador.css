@@ -1,34 +1,38 @@
 body {
     background-color: rgb(229, 229, 229);
-    display: grid;
+   /* display: grid; */
+    width: 1440px;
 }
 
 .logo {
-    /* padding: 40px 0 0 65px; */
     position: absolute;
-    top: 40px;
-    left: 65px;
+    width: 120px;
+    padding: 40px 0 0 84px;
+    /*top: 40px;
+    left: 84px;*/
+    width: 31px;
 }
 
-.cuerpo {
+main {
+    grid-row: 1/2;
+    width: auto;
     display: flex;
+    justify-content: space-between;
     gap: 80px;
-    padding: 0 0 10px;
+   /* padding: 0 0 10px; */
     font-family: 'Inter', sans-serif;
     background-color: #E5E5E5;
 }
 
 
 .cuadro1 {
-    float: right;
-    display: grid;
-    grid-template-rows: 88% 12%;
+    width: auto;
 }
 
 .cuadro-texto1 {
-    grid-row: 1/1;
     width: 680px;
-    margin: 168px 0 0 200px;
+    margin: 168px 0 0 240px;
+    height: 690px;
 }
 
 .texto1 {
@@ -36,7 +40,7 @@ body {
 }
 
 .cuadro-texto-botones1 {
-    margin: 0 0 0 200px;
+    margin: 0 0 0 240px;
     /* background-color: chartreuse; */
     /* top: 851px; */
     width: 680px;
@@ -82,10 +86,11 @@ body {
 }
 
 .cuadro2 {
+    display: flex;
     background-color: rgb(255, 255, 255);
     width: 400px;
-    float: right;
-    margin: 40px 10px 0 0;
+    justify-content: flex-end;
+    margin: 40px 40px 0 0;
     height: 944px;
     border-radius: 30px;
 }
@@ -95,9 +100,13 @@ body {
     margin: auto;
 }
 
+.texto-cuadro2{
+    margin: 32px 40px;
+    line-height: 29px;
+}
+
 .imagen1 {
     width: 100%;
-    padding: 215px 0px 30px;
 }
 
 .texto2 {
@@ -108,16 +117,88 @@ body {
 
 .texto2-1 {
     margin: 20px 10px;
+    color: #495057;
 }
 
-footer {
+footer{
+    position: absolute;
+    top: 994px;
+    width: 1440px;
+}
+
+.footer {
     background-color: #E5E5E5;
     text-align: center;
+    padding-top: 10px;
 }
 
-@media screen and (max-width: 540px){
+
+/* ==== para telefono ==== */
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+
     body {
-        padding: 0 ;
+       /* display: grid;
+        grid-template-rows: 80% 90%;*/
+        width: 668px;
+    }
+    
+    .cuerpo{
+        padding: 0 1rem;
+        display: grid;
+        grid-template-rows: 70% 15% 15%;
+    }
+
+    .logo{
+        position: absolute;
+        padding: 73px 0 0 40px ;
+    }
+
+    .cuadro1{
+        grid-row: 1/3;
+        grid-template-rows: none;
+    }
+
+    .cuadro-texto1{
+        height: 50%;
+    }
+
+    .texto1{
+        width: 100%;
+        height: 90%;
+    }
+
+    .cuadro-texto-botones1{
+        grid-row: 2/3;
+    }
+
+    .cuadro2{
+        grid-row: 3/3;
+    }
+
+    .cuadro1, .cuadro2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cuadro-texto1, .cuadro-texto-botones1{
+        margin-left: 0;
+    }
+
+    .cuadro2{
+        height: 133px;
+    }
+
+    .imagen1 {
+        display: none;
+    }
+
+    footer{
+        text-align: center;
+        width: 668px;
     }
 
 }
