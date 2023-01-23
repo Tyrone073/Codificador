@@ -1,7 +1,9 @@
 body {
     background-color: rgb(229, 229, 229);
-   /* display: grid; */
+    display: grid;
     width: 1440px;
+    width:  1024px;
+   
 }
 
 .logo {
@@ -29,9 +31,9 @@ main {
     width: auto;
 }
 
-.cuadro-texto1 {
+.cuadro-texturea{
     width: 680px;
-    margin: 168px 0 0 240px;
+    padding: 168px 0 0 240px;
     height: 690px;
 }
 
@@ -40,7 +42,7 @@ main {
 }
 
 .cuadro-texto-botones1 {
-    margin: 0 0 0 240px;
+    padding: 0 0 0 240px;
     /* background-color: chartreuse; */
     /* top: 851px; */
     width: 680px;
@@ -55,8 +57,7 @@ main {
     text-align: left;
     color: grey;
     font-size: 12px;
-    margin: 0px 0px 0px 24px;
-    padding: 2px 0px 17px;
+    padding: 2px 0px 17px 24px;
 }
 
 .botones {
@@ -86,22 +87,26 @@ main {
 }
 
 .cuadro2 {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    width: 400px;
+    /*display: flex;
+    background-color: rgb(255, 255, 255);*/
+  /*  width: 400px;*/
     justify-content: flex-end;
     margin: 40px 40px 0 0;
-    height: 944px;
-    border-radius: 30px;
+  /*  height: 944px;*/
+   /* border-radius: 30px;*/
 }
 
-.contenido-cuadro2 {
+.contenido-cuadro2{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
     text-align: center;
     margin: auto;
+    width: 400px;
+    height: 944px;
 }
 
 .texto-cuadro2{
-    margin: 32px 40px;
+    padding: 32px 40px;
     line-height: 29px;
 }
 
@@ -112,11 +117,11 @@ main {
 .texto2 {
     font-weight: bold;
     font-size: 24px;
-    margin: 0px 10px;
+    padding: 0px 10px;
 }
 
 .texto2-1 {
-    margin: 20px 10px;
+    padding: 20px 10px;
     color: #495057;
 }
 
@@ -136,34 +141,37 @@ footer{
 /* ==== para telefono ==== */
 
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 75%;
-    }
-
+    
     body {
-       /* display: grid;
+        /* display: grid;
         grid-template-rows: 80% 90%;*/
-        width: 668px;
+        width: 768px;
+        height: 1174px;
     }
     
     .cuerpo{
+        width: 768px;
+       /* height: 1174px;*/
         padding: 0 1rem;
         display: grid;
-        grid-template-rows: 70% 15% 15%;
+        grid-template-rows: 70% 30%;
     }
 
     .logo{
         position: absolute;
-        padding: 73px 0 0 40px ;
+        padding: 76px 0 0 40px ;
     }
 
     .cuadro1{
-        grid-row: 1/3;
-        grid-template-rows: none;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-rows: 836px 179px;
     }
 
-    .cuadro-texto1{
-        height: 50%;
+    .cuadro-texturea{
+       /* padding: 0; */
+        padding-top: 240px;
+        height: 548px;
     }
 
     .texto1{
@@ -172,25 +180,26 @@ footer{
     }
 
     .cuadro-texto-botones1{
-        grid-row: 2/3;
+        grid-row: 2/2;
     }
 
     .cuadro2{
-        grid-row: 3/3;
+        grid-row: 2/2;
+        height: 133px;
+        margin: 0;
+        padding: 32px;
     }
 
     .cuadro1, .cuadro2 {
-        width: 100%;
+        display: grid;
+        width: 768px;
         justify-content: center;
     }
 
-    .cuadro-texto1, .cuadro-texto-botones1{
-        margin-left: 0;
+    .cuadro-texturea, .cuadro-texto-botones1{
+        padding-left: 0;
     }
 
-    .cuadro2{
-        height: 133px;
-    }
 
     .imagen1 {
         display: none;
@@ -198,7 +207,29 @@ footer{
 
     footer{
         text-align: center;
-        width: 668px;
+        width: 768px;
+        top: 1190px;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+
+    body{
+        width: 375px;
+        height: 933px;
+    }
+
+    .logo{
+        padding: 24px 0 0 16px;
+    }
+
+    .cuadro-texturea{
+        padding-top: 152px;
+    }
+
+    .cuerpo{
+     /*   height: 933px;*/
     }
 
 }
