@@ -1,11 +1,6 @@
 body {
     background-color: rgb(229, 229, 229);
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-between;*/
     gap: 20px;
-    /*width: 1440px;
-    width:  1024px;*/
     display: grid;
     grid-template-rows: 1024px 24px;
    
@@ -15,8 +10,6 @@ header {
     position: absolute;
     width: 120px;
     padding: 40px 0 0 84px;
-    /*top: 40px;
-    left: 84px;*/
     width: 31px;
 }
 
@@ -26,7 +19,6 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 80px;
-   /* padding: 0 0 10px; */
     font-family: 'Inter', sans-serif;
     background-color: #E5E5E5;
     display: grid;
@@ -44,7 +36,6 @@ main {
 .cuadro-texturea{
     display: flex;
     width: 100%;
-   /* width: 680px;*/
     height: 690px;
 }
 
@@ -62,10 +53,7 @@ textarea::placeholder{
 }
 
 .cuadro-texto-botones1 {
-    /* background-color: chartreuse; */
-    /* top: 851px; */
     width: 100%;
-   /* width: 680px;*/
 }
 
 .texto1-1 {
@@ -80,7 +68,6 @@ textarea::placeholder{
 }
 
 .botones {
-    /* background-color: rgb(255, 152, 18); */
     display: flex;
     gap: 24px;
 }
@@ -98,13 +85,11 @@ button{
 .boton0{
     background-color: #0A3871;
     color: #ffff;
-    /*float: left;*/
 }
 
 .boton1{
     background-color: #D8DFE8;
     color: #0A3871;
- /* float: right;*/
 }
 
 .boton0:active{
@@ -123,8 +108,6 @@ button{
     grid-column: 2/2;
     display: flex;
     background-color: rgb(255, 255, 255);
-    /*width: 400px;*/
-   /* justify-content: flex-end;*/
     margin: 40px 40px 0 0;
    /* padding: 2rem;*/
     height: 944px;
@@ -138,10 +121,6 @@ button{
 .contenido-cuadro2{
     text-align: center;
     padding: 0 3rem;
-    /*margin: auto;
-    justify-content: center;
-    display: flex;
-    flex-direction: column*/
 }
 
 #texturea2{
@@ -185,18 +164,13 @@ button{
 
 footer{
     grid-row: 2/2;
-   /* position: absolute;
-    top: 994px;*/
     display: flex;
     align-items: center;
     justify-content: center;
-    /*width: 1440px;*/
 }
 
 .footer {
     background-color: #E5E5E5;
-   /* padding-top: 10px;
-     text-align: center;*/
 }
 
 
@@ -205,19 +179,13 @@ footer{
 @media screen and (max-width: 768px) {
     
     body {
-        /* display: grid;
-        grid-template-rows: 80% 90%;*/
         width: 768px;
         height: 1174px;
     }
     
     main{
         width: 100%;
-       /* height: 1174px;*/
         padding: 0 1rem;
-       /* display: grid;
-        grid-template-rows: 70% 30%;
-        justify-content: center;*/
         display: flex;
         flex-direction: column;
         gap: 64px;
@@ -232,12 +200,10 @@ footer{
     .cuadro1{
         display: grid;
         grid-template-rows: 836px 100px;
-       /* width: 768px;*/
         padding: 0;
     }
 
     .cuadro-texturea{
-       /* padding: 0; */
         padding-top: 240px;
         height: 548px;
     }
@@ -271,9 +237,7 @@ footer{
     }
 
     .contenido-cuadro2{
-
         width: 100%;
-       /* padding: 32px;*/
     }
 
     .copiar{
@@ -317,7 +281,6 @@ footer{
 
     main{
         width: 343px;
-     /*   height: 933px;*/
         gap: 160px;
     }
 
