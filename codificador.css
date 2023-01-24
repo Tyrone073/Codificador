@@ -158,7 +158,7 @@ footer{
 }
 
 
-/* ==== para telefono ==== */
+/* ==== para tablet ==== */
 
 @media screen and (max-width: 768px) {
     
@@ -178,7 +178,8 @@ footer{
         justify-content: center;*/
         display: flex;
         flex-direction: column;
-        gap: 0;
+        gap: 64px;
+        align-items: center;
     }
 
     header{
@@ -189,7 +190,8 @@ footer{
     .cuadro1{
         display: grid;
         grid-template-rows: 836px 100px;
-        width: 768px;
+       /* width: 768px;*/
+        padding: 0;
     }
 
     .cuadro-texturea{
@@ -206,17 +208,26 @@ footer{
     .cuadro-texto-botones1{
         grid-row: 2/2;
     }
+    
+    button{
+        width: 332px;
+    }
 
     .cuadro2{
+        width: 620px;
         height: 133px;
         margin: 0 0px;
-        /*padding: 32px;*/
+        padding: 32px;
     }
 
     .contenido-cuadro2{
 
-        width: 768px;
-        padding: 32px;
+        width: 100%;
+       /* padding: 32px;*/
+    }
+
+    .copiar{
+        display: none;
     }
 
     .cuadro-texturea, .cuadro-texto-botones1{
@@ -231,10 +242,13 @@ footer{
     footer{
         text-align: center;
         width: 768px;
-        top: 1190px;
+        position: relative;
+        top: 200px;
     }
 
 }
+
+/* ==== para teléfono ==== */
 
 @media screen and (max-width: 375px){
 
@@ -252,7 +266,21 @@ footer{
     }
 
     main{
+        width: 343px;
      /*   height: 933px;*/
+        gap: 160px;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+    .cuadro2{
+        width: 265px;
+    }
+
+    footer{
+        width: 100%;
+        top: 280px;
     }
 
 }
