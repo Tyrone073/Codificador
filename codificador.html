@@ -38,7 +38,7 @@
                     <p>Solo letras minúsculas y sin acentos</p>
                 </div>
 
-                <div class="botones">
+                <div class="botones" onclick="document.getElementById('contenido-cuadro2').style.display='none'" >
 
                     <button id="encriptar" class="boton0">Encriptar</button>
 
@@ -53,25 +53,29 @@
 
         <section class="cuadro2">
 
-            <div class="contenido-cuadro2"> 
+            <div  class="contenido-cuadro2"> 
 
 
                 <textarea id="texturea2"></textarea>
 
-                <div class="imagen1">
-                    <img src="imagen/Muñeco.png" alt="Ningún mensaje fue encontrado">
+                <div id="contenido-cuadro2"> 
+
+                    <div class="imagen1">
+                        <img src="imagen/Muñeco.png" alt="Ningún mensaje fue encontrado">
+                    </div>
+
+                    <div class="texto-cuadro2"> 
+
+                        <h3 class="texto2">Ningún mensaje fue encontrado</h3>   
+
+                        <p class="texto2-1">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                        
+                    </div>
                 </div>
 
-                <div class="texto-cuadro2"> 
-
-                    <h3 class="texto2">Ningún mensaje fue encontrado</h3>   
-
-                    <p class="texto2-1">Ingresa el texto que desees encriptar o desencriptar.</p>
-
-                    <button class="copiar">Copiar</button>
-
-                </div>
-
+                <button class="copiar">Copiar</button>
+                
             </div>
 
         </section>     
@@ -85,16 +89,21 @@
 
     <script>
         function inicializar() {
+            
             document.getElementById("encriptar").addEventListener("click", function(){
+
                 var texto = document.getElementById("texturea1").value;
                 var textoEncriptado = encriptar(texto);
                 document.getElementById("texturea2").value = textoEncriptado;
+           
             });
 
             document.getElementById("desencriptar").addEventListener("click", function(){
+
                 var texto = document.getElementById("texturea1").value;
                 var textoDesencriptado = desencriptar(texto);
                 document.getElementById("texturea2").value = textoDesencriptado;
+            
             });
 
             function encriptar(texto) {
@@ -111,9 +120,9 @@
                             .replace(/ai/g, "a")
                             .replace(/ober/g, "o")
                             .replace(/ufat/g, "u");
-}
+            }
+            
         }  
-        
         
     </script>
 
