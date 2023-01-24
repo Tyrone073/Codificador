@@ -91,6 +91,8 @@ button{
     border: 1px solid #0A3871;
     border-radius: 24px;
     font-size: 16px;
+    transition: 100ms all;
+    cursor: pointer
 }
 
 .boton0{
@@ -105,8 +107,16 @@ button{
  /* float: right;*/
 }
 
-.boton0, .boton1:active{
+.boton0:active{
+    background: #55acee;
+    color: #ffffff;
+    transform: scale(1.02);
+}
 
+.boton1:active{
+    background: #25d366;
+    color: #ffffff;
+    transform: scale(1.02);
 }
 
 .cuadro2 {
@@ -163,8 +173,13 @@ button{
     display: none;
     background-color: #ffffff;
     color: #0A3871;
-    cursor: pointer;
-    transform: scale(1.01);
+    
+}
+
+#copiar:active{
+    background: #4862a3;
+    color: #ffffff;
+    transform: scale(1.02);
 }
 
 footer{
