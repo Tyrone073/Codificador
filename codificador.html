@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="inicializar()">
 
     <header>
 
@@ -25,8 +25,11 @@
         <section class="cuadro1">
 
             <div class="cuadro-texturea">
-                <textarea class="texto1">Ingrese el texto aquí</textarea> 
 
+                <textarea   required placeholder="Ingrese el texto aquí" id="texturea1"></textarea> 
+                <script> 
+                    texturea1.focus()
+                </script>
             </div>  
    
             <div class="cuadro-texto-botones1">
@@ -36,8 +39,11 @@
                 </div>
 
                 <div class="botones">
-                    <button class="boton0">Encriptar</button>
-                    <button class="boton1">Desencriptar</button>   
+
+                    <button id="encriptar" class="boton0">Encriptar</button>
+
+                    <button id="desencriptar" class="boton1">Desencriptar</button> 
+
                 </div>
 
             </div>
@@ -48,6 +54,9 @@
         <section class="cuadro2">
 
             <div class="contenido-cuadro2"> 
+
+
+                <textarea id="texturea2"></textarea>
 
                 <div class="imagen1">
                     <img src="imagen/Muñeco.png" alt="Ningún mensaje fue encontrado">
@@ -73,6 +82,40 @@
         <p class="footer">&copy Copyright Tyrone Pilay Menendez</p>
         <!-- <img src="imagen/pie-de-pagina.svg"> -->
     </footer>
+
+    <script>
+        function inicializar() {
+            document.getElementById("encriptar").addEventListener("click", function(){
+                var texto = document.getElementById("texturea1").value;
+                var textoEncriptado = encriptar(texto);
+                document.getElementById("texturea2").value = textoEncriptado;
+            });
+
+            document.getElementById("desencriptar").addEventListener("click", function(){
+                var texto = document.getElementById("texturea1").value;
+                var textoDesencriptado = desencriptar(texto);
+                document.getElementById("texturea2").value = textoDesencriptado;
+            });
+
+            function encriptar(texto) {
+                return texto.replace(/e/g, "enter")                           
+                            .replace(/i/g, "imes")
+                            .replace(/a/g, "ai")
+                            .replace(/o/g, "ober")
+                            .replace(/u/g, "ufat");
+            }
+
+            function desencriptar(texto) {
+                return texto.replace(/enter/g, "e")             
+                            .replace(/imes/g, "i")
+                            .replace(/ai/g, "a")
+                            .replace(/ober/g, "o")
+                            .replace(/ufat/g, "u");
+}
+        }  
+        
+        
+    </script>
 
 </body>
 

@@ -48,8 +48,17 @@ main {
     height: 690px;
 }
 
-.texto1 {
+textarea{
     width: 577px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #0A3871;
+    outline: none;
+}
+
+textarea::placeholder{
+    color: #0A3871;
 }
 
 .cuadro-texto-botones1 {
@@ -280,7 +289,7 @@ footer{
 
     footer{
         width: 100%;
-        top: 280px;
+        top: 300px;
     }
 
 }
