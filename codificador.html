@@ -56,7 +56,7 @@
             <textarea id="texturea2" class="texturea2"></textarea>
             
             <button id="copiar">Copiar</button>
-            
+
             <div id="contenido-cuadro2" class="contenido-cuadro2"> 
 
 
@@ -137,6 +137,11 @@
                 document.getElementById("copiar").style.display = "block";
             });
 
+            document.getElementById("copiar").addEventListener("click", function(){
+                var copia = document.getElementById("texturea2");
+                copia.select();
+                document.execCommand("copy");
+            });
             
         }  
         
