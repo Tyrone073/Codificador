@@ -8,19 +8,17 @@ body {
 
 header {
     position: absolute;
-    width: 120px;
     padding: 40px 0 0 84px;
     width: 31px;
 }
 
 main {
+    background-color: #E5E5E5;
     width: 1440px;
     grid-row: 1/1;
-    display: flex;
     justify-content: space-between;
     gap: 80px;
     font-family: 'Inter', sans-serif;
-    background-color: #E5E5E5;
     display: grid;
     grid-template-columns: 60% 35%;
 }
@@ -109,7 +107,6 @@ button{
     display: flex;
     background-color: rgb(255, 255, 255);
     margin: 40px 40px 0 0;
-   /* padding: 2rem;*/
     height: 944px;
     border-radius: 30px;
     flex-direction: column;
@@ -170,6 +167,7 @@ footer{
     justify-content: center;
     gap: 1rem;
 }
+
 footer p{
     color: #0A3871;
 }

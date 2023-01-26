@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Codificador Challenge ONE</title>
     <link rel="stylesheet" href="reset.css"> 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
-<body onload="inicializar()">
-
+<body onload="ejecutar()">
+    
     <header>
-
+        
         <img src="imagen/logo-aluraespanhol.svg" >
 
     </header>
     
     <main>
-
-
+        
+        
         <section class="cuadro1">
 
             <div class="cuadro-texturea">
 
                 <textarea   required placeholder="Ingrese el texto aquí" id="texturea1"></textarea> 
-                <script> 
-                    texturea1.focus()
-                </script>
+                
             </div>  
    
             <div class="cuadro-texto-botones1">
@@ -43,20 +42,20 @@
                     <button id="encriptar" class="boton0">Encriptar</button>
 
                     <button id="desencriptar" class="boton1">Desencriptar</button> 
-
+                    
                 </div>
-
+                
             </div>
 
         </section>
-  
+        
 
         <section class="cuadro2">
 
             <textarea id="texturea2" class="texturea2"></textarea>
             
             <button id="copiar">Copiar</button>
-
+            
             <div id="contenido-cuadro2" class="contenido-cuadro2"> 
 
 
@@ -66,9 +65,9 @@
                 </div>
 
                 <div class="texto-cuadro2"> 
-
+                    
                     <h3 class="texto2">Ningún mensaje fue encontrado</h3>   
-
+                    
                     <p class="texto2-1">Ingresa el texto que desees encriptar o desencriptar.</p>
 
                         
@@ -83,71 +82,23 @@
     </main>
 
     <footer>
+
         <p>Create by Tyrone Pilay</p>
+        
         <div>
             <a href="https://github.com/Tyrone073">
                 <img src="imagen/github.png" alt="github">
             </a>
         </div>
+        
         <div>
             <a href="https://linkedin.com/in/tyrone-pilay">
                 <img src="imagen/linkedin.png" alt="linkedin">
             </a>
         </div>
-    </footer>>
-
-    <script>
-        function inicializar() {
-            
-            document.getElementById("encriptar").addEventListener("click", function(){
-
-                var texto = document.getElementById("texturea1").value;
-                var textoEncriptado = encriptar(texto);
-                document.getElementById("texturea2").value = textoEncriptado;
-                document.getElementById("contenido-cuadro2").style.display = "none";
-                document.getElementById("texturea2").style.display = "block";
-                document.getElementById("copiar").style.display = "block";
-           
-            });
-
-            document.getElementById("desencriptar").addEventListener("click", function(){
-
-                var texto = document.getElementById("texturea1").value;
-                var textoDesencriptado = desencriptar(texto);
-                document.getElementById("texturea2").value = textoDesencriptado;
-                document.getElementById("contenido-cuadro2").style.display = "none";
-                document.getElementById("texturea2").style.display = "block";
-                document.getElementById("copiar").style.display = "block";
-            
-            });
-            
-            function encriptar(texto) {
-                return texto.replace(/e/g, "enter")                           
-                            .replace(/i/g, "imes")
-                            .replace(/a/g, "ai")
-                            .replace(/o/g, "ober")
-                            .replace(/u/g, "ufat");
-            }
-
-            function desencriptar(texto) {
-                return texto.replace(/enter/g, "e")             
-                            .replace(/imes/g, "i")
-                            .replace(/ai/g, "a")
-                            .replace(/ober/g, "o")
-                            .replace(/ufat/g, "u");
-            }
-
-
-            document.getElementById("copiar").addEventListener("click", function(){
-                var copia = document.getElementById("texturea2");
-                copia.select();
-                document.execCommand("copy");
-            });
-            
-        }  
         
-    </script>
-
+    </footer>
+    
 </body>
 
 </html>
