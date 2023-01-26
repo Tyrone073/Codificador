@@ -163,16 +163,16 @@ button{
 }
 
 footer{
+    background-color: #E5E5E5;
     grid-row: 2/2;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
-
-.footer {
-    background-color: #E5E5E5;
+footer p{
+    color: #0A3871;
 }
-
 
 /* ==== para tablet ==== */
 
