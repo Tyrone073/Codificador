@@ -1,4 +1,4 @@
-# Encriptador de texto
+# Codificador de texto
 
 Este proyecto es una aplicación de encriptación de texto. Se siguió una guía de diseño proporcionada por Alura LATAM para el desarrollo de la interfaz de usuario.
 
